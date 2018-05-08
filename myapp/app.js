@@ -25,6 +25,10 @@ app.use('/users', usersRouter);
 app.get('/main', function(req, res) {
   res.sendFile( __dirname + "/views/" + "main.html" );
 });
+app.get('/survey', function(req, res) {
+  res.sendFile( __dirname + "/views/" + "survey.html" );
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
