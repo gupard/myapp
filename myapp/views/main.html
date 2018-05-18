@@ -1,7 +1,17 @@
 <html>
+        <meta name="csrf-token" content={{csrfToken}}>
 <body>
-<div>
-    welcome,david.
-</div>
+    <div>
+        welcome,david.
+        <div>
+            {{csrfToken}}
+        </div>
+        <div>
+            <button id="clciktest">click</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
 </body>
+
 </html>
